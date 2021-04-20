@@ -17,14 +17,14 @@ function App() {
   const Stack = createStackNavigator();
 
   return (
-    <ItemsProvider> 
+    // <ItemsProvider> 
     <NavigationContainer><SafeAreaProvider>
       <Stack.Navigator initialRouteName="Home">
         <Stack.Screen name="Home" component={HomeScreen} />
         <Stack.Screen name="Add Item" component={AddItem} />
       </Stack.Navigator>
     </SafeAreaProvider></NavigationContainer>
-    </ItemsProvider>
+    // </ItemsProvider>
   );
 
 }
